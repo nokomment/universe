@@ -1,0 +1,9 @@
+{
+ "packagingVersion": "2.0",
+ "name": "nifi",
+ "version": "latest",
+ "maintainer": "khan_naader@bah.com",
+ "description": "ASC Nifi",
+ "framework": false,
+ "tags": ["mesosphere", "service", "nifi"],
+}

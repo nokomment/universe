@@ -1,0 +1,24 @@
+{
+  "id": "nifi",
+  "cmd": null,
+  "cpus": 1.0,
+  "mem": 1024,
+  "instances": 1,
+  "acceptedResourceRoles": [
+    "slave_public"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "asc/asc_nifi:latest",
+      "network": "BRIDGE",
+      "forcePullImage": false,
+      "portMappings": [
+        {
+          "containerPort": 8080, "hostPort": 8080,
+          "protocol": "tcp"
+        }
+      ]  
+    }
+  }
+}
